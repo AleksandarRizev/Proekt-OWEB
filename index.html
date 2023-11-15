@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Peak</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="loadPage('home')">Дома</a></li>
+                <li class="dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+                    <a href="#">Производи</a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="loadCategory('shoes')">Патики</a>
+                        <a href="#" onclick="loadCategory('clothes')">Облека</a>
+                        <a href="#" onclick="loadCategory('watches')">Часовници</a>
+                    </div>
+                </li>
+                <li><a href="#" onclick="loadPage('contact')">Контакт</a></li>
+            </ul>
+        </nav>
+        <div id="logo">
+            <a href="#" onclick="loadPage('home')">
+                <img src="Sliki/logo.png" alt="Running Peak Лого">
+            </a>
+        </div>
+        <div id="welcomeMessage" class="welcome-message"></div>
+    </header>
+
+    <div id="content"> </div>
+
+    <footer>
+        <p>&copy; 2023 Running Peak. Сите права се задржани.</p>
+        <div id="survey-link">
+            <a href="#" onclick="loadPage('survey')">Пополнете ја нашата анкета</a>
+        </div>
+    </footer>
+
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h3>Најава</h3>
+            <form onsubmit="return submitForm()">
+                <label for="username">Име:</label>
+                <input type="text" id="username" required>
+                <input type="submit" value="Најава">
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
