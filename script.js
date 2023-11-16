@@ -139,7 +139,7 @@ function loadPage(page) {
                 <section id="contact-info">
                     <div class="contact-item">
                         <h3>Емаил</h3>
-                        <p>info@runningpeak.com</p>
+                        <a href="mailto:info@runningpeak.com">info@runningpeak.com</a>
                     </div>
                     <div class="contact-item">
                         <h3>Телефонски број</h3>
